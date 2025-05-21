@@ -1,12 +1,20 @@
 import React from 'react'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+
+
 
 function Footer() {
   return (
 <>
 <footer className="netflix-footer">
-<section class="footer">
-  <p class="footer-title">Questions? Contact us.</p>
-  <div class="footer-links">
+<section className="footer">
+  <p className="footer-title">Questions? Contact us.</p>
+  <div className="footer-links">
     <ul>
       <li><a href="#">FAQ</a></li>
       <li><a href="#">Help Center</a></li>
@@ -31,9 +39,22 @@ function Footer() {
       <li><a href="#">Only on Netflix</a></li>
     </ul>
   </div>
+
+<section className="social-icon-section">
+  <div className="icon-container">
+    <FacebookIcon className="icon facebook" />
+    <TwitterIcon className="icon twitter" />
+    <InstagramIcon className="icon instagram" />
+    <YouTubeIcon className="icon youtube" />
+    <LinkedInIcon className="icon linkedin" />
+    <AttachMoneyIcon className="icon money" />
+  </div>
+</section>
+   <p className="footer-copy">&copy; 2025 Netflix Clone by Bilal</p>
+
 </section>
 
-   <p class="footer-copy">&copy; 2025 Netflix Clone by Bilal</p>
+
 </footer>
 </>  )
 }

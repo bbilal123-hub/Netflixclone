@@ -1,0 +1,95 @@
+/* Container for the rowlist */
+.rowlist1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Row heading */
+.rowlist__heading {
+  font-size: 4.5rem; /* Default font size for large screens */
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Poster styling */
+.row__poster {
+  max-height: 150px;
+  object-fit: contain;
+  margin-right: 10px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.row__posterLarge {
+  max-height: 300px;
+}
+
+/* Responsive Media Query for tablets and below (<= 1200px) */
+@media (max-width: 1200px) {
+  .rowlist__heading {
+    font-size: 3.5rem;
+  }
+
+  .rowlist1 {
+    padding: 0 15px;
+  }
+}
+
+/* Responsive Media Query for mobile screens (<= 768px) */
+@media (max-width: 768px) {
+  .rowlist__heading {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+
+  .rowlist1 {
+    padding: 0 10px;
+  }
+
+  .row__posters {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .row__poster {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .row__posterLarge {
+    max-height: 250px;
+  }
+}
+
+/* Responsive Media Query for extra small mobile screens (<= 480px) */
+@media (max-width: 480px) {
+  .rowlist__heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .row__posters {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .row__poster {
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .row__posterLarge {
+    max-height: 200px;
+  }
+}

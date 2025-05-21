@@ -1,0 +1,28 @@
+.row {
+  margin-bottom: 40px;
+}
+
+.row__title {
+  margin: 0 0 10px 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Shared poster row styles */
+.row__posters {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+}
+
+/* Common poster styles */
+.row__poster {
+  object-fit: contain;
+  margin-right: 10px;
+  transition: transform 450ms;
+  border-radius: 8px;
+  cursor: pointer;
+}
